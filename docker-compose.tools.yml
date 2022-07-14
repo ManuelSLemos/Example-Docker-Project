@@ -1,0 +1,9 @@
+version: '3.3'
+
+services:
+
+  mongodb-client:
+    container_name: mongodb-client
+    image: mongoclient/mongoclient:4.0.0
+    ports:
+      - "${MONGO_CLIENT_PORT}:3000"
